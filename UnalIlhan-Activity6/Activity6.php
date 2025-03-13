@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="Activity6.php" method="post">
+    <form action="Activity6-preview.php" method="post">
 
         <h1>Registration Form</h1>
 
