@@ -36,13 +36,10 @@ function displayScores() {
     $("scores_table").innerHTML = tableHTML;
 }
 
-// ...existing code...
-
 function addScore() {
     var name = $("name").value;
     var score = parseInt($("score").value, 10);
     
-    // Clear any existing error message
     if($("error-message")) {
         $("error-message").remove();
     }
@@ -54,7 +51,6 @@ function addScore() {
         $("score").value = "";
         $("name").focus();
     } else {
-        // Create and show error message
         var errorDiv = document.createElement('div');
         errorDiv.id = 'error-message';
         errorDiv.className = 'error-message';
@@ -63,7 +59,6 @@ function addScore() {
     }
 }
 
-// Add these event listeners to clear error message when user starts typing
 window.onload = function () {
     $("display_results").onclick = displayResults;
     $("display_scores").onclick = displayScores;
